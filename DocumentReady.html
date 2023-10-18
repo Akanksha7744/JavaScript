@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            border-color: blue;
+            background-color: rgb(90, 239, 227);
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <h1>Contact Form</h1>
+        <br>
+        <label for="fname">First Name</label><br><br>
+        <input type="text" id="fname" placeholder="first name" required="">
+        <br><br>
+        <label for="lname">Last Name</label><br><br>
+        <input type="text" id="lname" placeholder="last name" required="">
+        <br><br>
+        <label for="Email">Email</label><br><br>
+        <input type="mail" id="Email" placeholder="mail id" required="">
+        <br><br>
+        <input onclick=test() type="submit" id="submit">
+    </div>
+    <script>
+        setTimeout(
+
+            function test() {
+                let arr = document.getElementById("lname");
+                arr.style.borderColor = "red";
+                arr.style.backgroundcolor = "blue";
+                //$(#id).addClass('');
+            }, 10000);
+    </script>
+</body>
+
+</html>
