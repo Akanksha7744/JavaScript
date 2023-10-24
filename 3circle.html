@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="3circle.css">
+</head>
+
+<body class="demo">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                    document.querySelector('.circle1 ').style.backgroundColor = ' red ';
+                }, 1000),
+                setTimeout(function() {
+                    document.querySelector('.circle2').style.backgroundColor = 'green';
+                }, 2000)
+            setTimeout(function() {
+                document.querySelector('.circle3').style.backgroundColor = 'orange';
+            }, 3000)
+        });
+    </script>
+</body>
+
+</html>
