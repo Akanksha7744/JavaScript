@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .even-label {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="label 1">Label 1</label>
+    <br>
+    <label for="label 2">Label 2</label>
+    <br>
+    <label for="label 3">Label 3</label>
+    <br>
+    <label for="label 4">Label 4</label>
+    <br>
+    <label for="label 5">Label 5</label>
+
+    <script>
+        const labels = document.querySelectorAll('label');
+        labels.forEach((label, index) => {
+            if (index % 2 == 1) {
+                label.classList.add('even-label');
+            }
+        });
+    </script>
+</body>
+
+</html>
